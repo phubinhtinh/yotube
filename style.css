@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: #0f0f0f;
+}
+.person-header-1 i{
+    color: white;
+    font-size: 20px;
+}
+.person-header-1{
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+svg{
+    margin-left: 30px;
+    width: 35px;
+    height: 35px;
+    /* vertical-align: middle; */
+}
+.person-header-1 p{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 22px;
+}
+.person-header-1 h5{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.input-1{
+    width: 500px;
+    height: 40px;
+    border-top-left-radius:  30px;
+    border-bottom-left-radius: 30px ;
+    border: 1px #303030 solid;
+    background-color:#0f0f0f ;
+    margin-left: 200px;
+    padding-left: 20px;
+}
+.type-input{
+    width: 60px;
+    height: 40px;
+    background-color: #222222;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px #303030 solid;
+    border-left: none;
+}
+
+.input-1::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.type-input i{
+    position: relative;
+    left:16px;
+    top: 10px;
+    color: #bebebe;
+}
+.type-micro{
+    background-color: #222222;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-micro i{
+    font-size: 19px;
+}
+.type-add{
+    background-color: #222222;
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 170px;
+}
+
+.type-add i{
+    font-size: 20px;
+}
+.type-add p{
+    margin-left: 8px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.type-bell{
+    margin-left: 20px;
+}
+#keyboar{
+    position: relative;
+    left: 690px;
+    color:#797373;
+}
