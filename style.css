@@ -7,6 +7,12 @@
 body{
     background-color: #0f0f0f;
 }
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
 .person-header-1 i{
     color: white;
     font-size: 20px;
@@ -34,7 +40,7 @@ svg{
     font-size: 10px;
     margin-bottom: 20px;
 }
-.input-1{
+.person-header-1 input{
     width: 500px;
     height: 40px;
     border-top-left-radius:  30px;
@@ -104,4 +110,101 @@ svg{
     position: relative;
     left: 690px;
     color:#797373;
+}
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+}
+.sidebar-left{
+    height: 100vh;
+    width: 100px;
+    position: fixed;
+}
+.sidebar-left p{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+.sidebar-left i{
+    font-size: 19px;
+    color: aliceblue;
+    margin: 30px 0px 5px 20px;
+}   
+.Short{
+    margin-left: 10px;
+}
+#tamgiac{
+    font-size: 10px;
+    position: relative;
+    right: 39px;
+    bottom: 5px;
+}
+#circle-user{
+    font-size: 26px;
+}
+.Me{    
+    margin-left: 17px;
+}
+#dowloand{
+    font-size: 18px;
+}
+#thanh-ngang{
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+.sidebar-right{
+    width: 90%;
+    min-height: 100vh;
+    margin-left: 8%;
+    overflow-y: auto;
+}
+.sidebar-right{
+    margin-top: 23px;
+}
+.sidebar-right button{
+    font-size: 12px;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    margin-left: 13px;
+}
+.sidebar-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+.header-sidebar{
+    position: fixed;
+}
+iframe{
+    width: 400px;
+    height: 260px;
+    border-radius: 20px;
+}
+/* .footer-flex{
+    display: flex;
+} */
+.sidebar-footer h2{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-left: 20px;
+}
+.son-div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: aliceblue;
+    display: inline-block;
+
 }
