@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+
+   /* Container cho logo nếu có */
+.youtube-logo {
+    display: inline-block;
+    width: 48px; /* Kích thước mong muốn */
+    height: 48px;
+    vertical-align: middle; /* Để căn chỉnh với chữ YouTube */
+}
+
+/* Đây là cách bạn chọn path của hình tam giác */
+.youtube-icon path:nth-child(2) { /* Chọn path thứ hai, là hình tam giác */
+    fill: white; /* Đảm bảo nó là màu trắng */
+}
+
+.youtube-icon path:nth-child(1) { /* Chọn path thứ nhất, là hình chữ nhật */
+    fill: red; /* Đảm bảo nó là màu đỏ */
+}
+        
+    
+  
+
+
+</style>
+
+<body>
+    <a href="#" class="youtube-logo">
+    <!-- <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
+        <g>
+            <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" fill="red"></path>
+            </g>
+    </svg> -->
+    <svg class="youtube-icon" viewBox="0 0 48 48">
+        <path d="M43.2 14.8c-.5-1.9-2-3.4-3.9-3.9C36.6 10 24 10 24 10s-12.6 0-15.3.9c-1.9.5-3.4 2-3.9 3.9C4 17.4 4 24 4 24s0 6.6.9 9.2c.5 1.9 2 3.4 3.9 3.9C11.4 38 24 38 24 38s12.6 0 15.3-.9c1.9-.5 3.4-2 3.9-3.9.9-2.6.9-9.2.9-9.2s0-6.6-.9-9.2zM20 31.5v-15l12 7.5-12 7.5z" fill="#FF0000"/> 
+        <path d="M20 31.5v-15l12 7.5-12 7.5z" fill="white"/> 
+    </svg>
+</a>
+</body>
+</html>
