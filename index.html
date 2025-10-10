@@ -5,42 +5,241 @@
     <title>Document</title>
 </head>
 <style>
-   
-
-   /* Container cho logo nếu có */
-.youtube-logo {
+    .sidebar-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    /* row-gap: 30px;
+    column-gap: 20px; */
+}
+.header-sidebar{
+    position: fixed;
+}
+iframe{
+    width: 400px;
+    height: 260px;
+    border-radius: 20px;
+}
+.footer-flex{
+    display: flex;
+}
+.sidebar-footer h2{
+    font-size: 16px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
-    width: 48px; /* Kích thước mong muốn */
-    height: 48px;
-    vertical-align: middle; /* Để căn chỉnh với chữ YouTube */
+    margin-left: 20px;
 }
+.son-div{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: aliceblue;
+    overflow: hidden;
+    object-fit: cover;
 
-/* Đây là cách bạn chọn path của hình tam giác */
-.youtube-icon path:nth-child(2) { /* Chọn path thứ hai, là hình tam giác */
-    fill: white; /* Đảm bảo nó là màu trắng */
+    /* display: inline-block; */
 }
-
-.youtube-icon path:nth-child(1) { /* Chọn path thứ nhất, là hình chữ nhật */
-    fill: red; /* Đảm bảo nó là màu đỏ */
+/* #bug {
+    width: 68.2px;
+    height: 50px;
+} */
+.son-div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
 }
-        
-    
-  
-
-
+.sidebar-footer p{
+    color: rgb(195, 174, 174);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-left: 57px;
+    margin-top: 6px;
+}
+ 
 </style>
 
 <body>
-    <a href="#" class="youtube-logo">
-    <!-- <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;">
-        <g>
-            <path d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" fill="red"></path>
-            </g>
-    </svg> -->
-    <svg class="youtube-icon" viewBox="0 0 48 48">
-        <path d="M43.2 14.8c-.5-1.9-2-3.4-3.9-3.9C36.6 10 24 10 24 10s-12.6 0-15.3.9c-1.9.5-3.4 2-3.9 3.9C4 17.4 4 24 4 24s0 6.6.9 9.2c.5 1.9 2 3.4 3.9 3.9C11.4 38 24 38 24 38s12.6 0 15.3-.9c1.9-.5 3.4-2 3.9-3.9.9-2.6.9-9.2.9-9.2s0-6.6-.9-9.2zM20 31.5v-15l12 7.5-12 7.5z" fill="#FF0000"/> 
-        <path d="M20 31.5v-15l12 7.5-12 7.5z" fill="white"/> 
-    </svg>
-</a>
+     <div class="sidebar-footer">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="https://yt3.googleusercontent.com/doofJLPXF5C12bz6kp119Yybu1S3AKiw-LKJR6JGrcyziUQXmCY4RHgGtbyyAVka10KY1dQwtw=s900-c-k-c0x00ffffff-no-rj" alt="ảnh lỗi">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                    <p>CD Media-Why?</p>
+                    <p>7,8N lượt xem 1 giờ trước</p>
+                </div>
+
+                <div>   
+                   <iframe  src="https://www.youtube.com/embed/cyV-b0YL1C4" title="Afghanistan: Bên Trong Tiểu Vương Quốc Hồi Giáo Taliban" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="https://yt3.googleusercontent.com/doofJLPXF5C12bz6kp119Yybu1S3AKiw-LKJR6JGrcyziUQXmCY4RHgGtbyyAVka10KY1dQwtw=s900-c-k-c0x00ffffff-no-rj" alt="">
+                            <!-- <img src="https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""> -->
+                        </div>
+                        <h2> 
+                            Afghanistan: Bên Trong Tiểu Vương Quốc Hồi Giáo Taliban     
+                        </h2>
+    
+                    </div>
+                    <p>Joe Hattab</p>
+                    <p>18tr lượt xem 10 giờ trước</p>
+                </div>
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+
+
+                <div>
+                    <iframe src="https://www.youtube.com/embed/jOiGrQ7bzv4?si=ABuFonLweQe5049H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="footer-flex">
+                        <div class="son-div">
+                            <img src="" alt="">
+                        </div>
+                        <h2> 
+                            Nguyên Nhân Khiến Mỹ Thua "Sấp Mặt" Ở <br>
+                            Afghanstan
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
